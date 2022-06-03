@@ -6,4 +6,3 @@
     if (5 > 2) {
         echo "Instrução dentro do if";
     }
-?>

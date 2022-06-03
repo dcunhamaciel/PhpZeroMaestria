@@ -4,4 +4,3 @@
     echo "testando espaço<br>"            ;
     echo
     "quebra de linha<br>";
-?>
