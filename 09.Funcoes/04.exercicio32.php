@@ -1,6 +1,7 @@
 <?php
 
-	function multiplicacao() {
+	function multiplicacao() 
+	{
 		$x = 5;
 		$y = 4.12;
 		$z = 8;
