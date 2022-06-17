@@ -10,3 +10,9 @@
     } else {
         echo "A chave não existe <br>";
     }
+
+    if (isset($array["nome"])) {
+        echo "A chave existe ISSET <br>";
+    } else {
+        echo "A chave não existe ISSET <br>";
+    }
