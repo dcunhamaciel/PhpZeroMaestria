@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="processamento.php" method="GET">
+    <form action="02.get_processamento.php" method="GET">
         <div>
             <input type="text" name="nome" placeholder="Preencha seu nome">
         </div>
