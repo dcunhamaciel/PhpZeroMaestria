@@ -28,21 +28,21 @@
                 Ad, hic? Culpa libero possimus quod molestias facere, ab sapiente? Voluptates praesentium, adipisci quas est voluptas architecto magnam officiis culpa animi fugiat atque vero expedita tempora obcaecati, aliquam accusamus. Dolores!</p>
             </div>
         </div>
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tags-list">
+                <?php foreach ($currentPost["tags"] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <h3 id="categories-title">Categorias</h3>
+            <ul id="categories-list">
+                <?php foreach ($categories as $category): ?>
+                    <li><a href="#"><?= $category ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul class="tag-list">
-            <?php foreach ($currentPost["tags"] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-        <h3 id="categories-title">Categorias</h3>
-        <ul id="categories-list">
-            <?php foreach ($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </aside>
   
 <?php
     include_once("templates/footer.php");
