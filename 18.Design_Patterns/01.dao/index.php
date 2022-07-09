@@ -2,6 +2,10 @@
 
     include_once("db.php");
 
+    $carDao = new CarDao($conn);
+
+    $cars = $carDao->findAll();    
+
 ?>
 
 <h1>Insira um carro:</h1>
