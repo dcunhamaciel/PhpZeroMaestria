@@ -100,10 +100,20 @@ h2 {
 
 /* Box Model */
 
+body {
+    margin: 0;
+}
+
 .boxmodel {
     width: 200px;
     height: 200px;
     background-color: red;
     border: 3px solid blue;
     border-radius: 10px;
+    /*padding: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 10px;*/
+    padding: 30px 20px 5px 10px;
 }
