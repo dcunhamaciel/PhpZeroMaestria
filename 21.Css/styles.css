@@ -161,6 +161,11 @@ body {
     position: fixed;
     height: 200px;
     background-color: yellow;
-    bottom: 0px;
-    
+    bottom: 0px;    
+}
+
+.sticky {
+    position: sticky;
+    background-color: green;
+    top: 0px;
 }
