@@ -123,3 +123,21 @@ body {
     display: inline-block;*/
     display: block;
 }
+
+/* Positions */
+
+.position {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-bottom: 2px dotted black;
+}
+
+.static {
+    position: static;
+    top: 100px;
+}
+
+.relative {
+
+}
