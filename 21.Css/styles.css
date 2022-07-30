@@ -175,3 +175,27 @@ body {
 /* absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor */
 /* fixed - posicina em qualquer lugar da tela, e é posicionada em relação ao html */
 /* sticky - está no flow do html, porém ao passar o scroll ela funciona como fixed */
+
+/* Float */
+
+.container {
+    padding: 50px;
+}
+
+.div-float {
+    overflow: auto;
+}
+
+.img-float {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.p-float {
+    color: #000;
+}
+
+.float-right {
+    float: right;
+}
