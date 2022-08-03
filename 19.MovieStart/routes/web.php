@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index');
+
+Route::get('/registro', [App\Http\Controllers\Auth\RegisteredUserController::class, 'create'])->name('site.auth');

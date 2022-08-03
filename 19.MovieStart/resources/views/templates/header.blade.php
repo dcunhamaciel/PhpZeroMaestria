@@ -1,6 +1,6 @@
 <header>
     <nav id="main-navbar" class="navbar navbar-expand-lg">
-        <a href="" class="navbar-brand">
+        <a href="{{ route('site.index') }}" class="navbar-brand">
             <img src="{{ asset('img/logo.svg') }}" alt="MovieStar" id="logo">
             <span id="moviestar-title">MovieStar</span>
         </a>
@@ -17,7 +17,7 @@
             <ul class="navbar-nav">
                 @guest
                     <li class="nav-item">
-                        <a href="" class="nav-link">Entrar / Cadastrar</a>
+                        <a href="{{ route('site.auth') }}" class="nav-link">Entrar / Cadastrar</a>
                     </li>                
                 @else
                     <li class="nav-item">
