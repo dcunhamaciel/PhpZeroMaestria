@@ -15,20 +15,28 @@
         </form>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="far fa-plus-square"></i>Incluir Filme
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Meus Filmes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link bold"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Sair</a>
-                </li>
+                @guest
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Entrar / Cadastrar</a>
+                    </li>                
+                @else
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="far fa-plus-square"></i> Incluir Filme
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Meus Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link bold">
+                            {{ Auth::user()->name }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sair</a>
+                    </li>
+                @endguest
             </ul>
         </div>
     </nav>
