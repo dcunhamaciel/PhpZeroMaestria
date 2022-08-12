@@ -17,7 +17,7 @@
             <ul class="navbar-nav">
                 @guest
                     <li class="nav-item">
-                        <a href="{{ route('site.auth') }}" class="nav-link">Entrar / Cadastrar</a>
+                        <a href="{{ route('site.login') }}" class="nav-link">Entrar / Registrar</a>
                     </li>                
                 @else
                     <li class="nav-item">
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Sair</a>
+                        <a href="{{ route('site.logout') }}" class="nav-link">Sair</a>
                     </li>
                 @endguest
             </ul>

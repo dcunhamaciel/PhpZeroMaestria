@@ -15,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index');
 
-Route::get('/registro', [App\Http\Controllers\Auth\RegisteredUserController::class, 'create'])->name('site.auth');
+Route::get('/login', [App\Http\Controllers\Auth\AuthenticatedSessionController::class, 'create'])->name('site.login');
+Route::post('/login', [App\Http\Controllers\Auth\AuthenticatedSessionController::class, 'store'])->name('site.login');
+Route::get('/logout', [App\Http\Controllers\Auth\AuthenticatedSessionController::class, 'destroy'])->name('site.logout');
+
+Route::get('/registro', [App\Http\Controllers\Auth\RegisteredUserController::class, 'create'])->name('site.register');
 Route::post('/registro', [App\Http\Controllers\Auth\RegisteredUserController::class, 'store'])->name('site.register');
